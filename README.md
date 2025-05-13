@@ -12,14 +12,27 @@ Monitor Configuration Manager is a Python script designed to help users save, lo
 
 ## Installation
 
+Download the project
+```bash
+git clone https://github.com/AngeIo/monitor_manager.git
+cd monitor_manager
+```
+Then choose between:
+
+Using traditionnal `venv`
 ```bash
 mkdir -p $HOME/.venvs
 python3 -m venv $HOME/.venvs/monitormanager
 source $HOME/.venvs/monitormanager/bin/activate
-git clone https://github.com/AngeIo/monitor_manager.git
-cd monitor_manager
 pip install setuptools
 python setup.py install
+```
+
+Or
+
+(Recommended) Using `pipx`
+```bash
+pipx install .
 ```
 
 ## Usage
