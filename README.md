@@ -10,6 +10,18 @@ Monitor Configuration Manager is a Python script designed to help users save, lo
 - **Remove** a saved profile.
 - Handles display rotation, resolution, scale, position, and priority settings.
 
+## Installation
+
+```bash
+mkdir -p $HOME/.venvs
+python3 -m venv $HOME/.venvs/monitormanager
+source $HOME/.venvs/monitormanager/bin/activate
+git clone https://github.com/AngeIo/monitor_manager.git
+cd monitor_manager
+pip install setuptools
+python setup.py install
+```
+
 ## Usage
 
 ### Command-Line Interface

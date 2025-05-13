@@ -8,9 +8,10 @@ setup(
     author_email="xyzjohnjung@gmail.com",
     url="https://github.com/yourusername/monitor_manager",  # Falls du es hostest
     packages=find_packages(),
+    py_modules=["main"],
     entry_points={
         'console_scripts': [
-            'monitormanager=monitormanager.main:main',  # Befehl für CLI
+            'monitormanager=main:main',  # Befehl für CLI
         ],
     },
     install_requires=[],  # Falls du Abhängigkeiten hast, hier angeben
